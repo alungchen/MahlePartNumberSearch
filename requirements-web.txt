@@ -4,4 +4,4 @@ python-multipart
 jinja2
 pandas
 openpyxl
-playwright
+playwright==1.40.0

@@ -1,0 +1,20 @@
+# 排除執行產物與暫存
+runs/
+__pycache__/
+*.pyc
+*.pyo
+batch_log.txt
+batch_error_*.png
+batch_error_*.html
+
+# Git
+.git/
+.gitignore
+
+# 其他
+.env
+*.md
+!DEPLOY.md
+cloudflare-deploy/
+.DS_Store
+Thumbs.db

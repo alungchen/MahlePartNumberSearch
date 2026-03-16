@@ -354,7 +354,16 @@ def run(
 
     cancelled = False
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=headless)
+        # Render/Docker 需要 no-sandbox；--disable-dev-shm-usage 避免 /dev/shm 不足
+        browser = p.chromium.launch(
+            headless=headless,
+            args=[
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+                "--disable-gpu",
+                "--disable-software-rasterizer",
+            ],
+        )
         ctx = browser.new_context(locale="zh-TW")
         page = ctx.new_page()
 

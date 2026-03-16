@@ -13,9 +13,9 @@ RUN pip install --no-cache-dir -r requirements-web.txt
 # 複製專案
 COPY . .
 
-# Render 會設定 PORT 環境變數
 ENV HOST=0.0.0.0
 ENV PORT=8000
 EXPOSE 8000
 
-CMD ["sh", "-c", "python -c \"import os; exec(open('web_app.py').read().replace('127.0.0.1', os.environ.get('HOST', '0.0.0.0')).replace('8000', str(int(os.environ.get('PORT', 8000)))))\""]
+# Render 會注入 PORT，web_app.py 會讀取
+CMD ["python", "web_app.py"]
