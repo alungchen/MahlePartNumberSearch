@@ -1,0 +1,11 @@
+# Render Blueprint - Mahle 批次查詢
+# 部署：連到 GitHub 倉庫後，Render 會自動偵測此檔
+services:
+  - type: web
+    name: mahle-batch-search
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: 1

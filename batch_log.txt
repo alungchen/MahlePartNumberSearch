@@ -1,0 +1,44 @@
+[2026-03-16 11:20:57] Python: 3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]
+[2026-03-16 11:20:57] Working dir: D:\OneDrive\YTEC\MahlePartNumberSearch
+[2026-03-16 11:20:57] Input: Input.xlsx
+[2026-03-16 11:20:57] Output: Output.xlsx
+[2026-03-16 11:20:57] Total queries: 11
+[2026-03-16 11:21:10] Start: LR015556
+[2026-03-16 11:21:38] OK: LR015556 -> AC 273 000S | OE=4
+[2026-03-16 11:21:38] Start: LR106642
+[2026-03-16 11:22:07] OK: LR106642 -> AC 1140 000S | OE=3
+[2026-03-16 11:22:07] Start: LR115952
+[2026-03-16 11:22:34] OK: LR115952 -> AC 1163 000P | OE=3
+[2026-03-16 11:22:34] Start: LR142436
+[2026-03-16 11:22:45] ERROR: LR142436 -> 未找到商品
+[2026-03-16 11:22:45] Traceback (most recent call last):
+  File "D:\OneDrive\YTEC\MahlePartNumberSearch\mahle_tecalliance_batch_v13.py", line 362, in run
+    goto_page3_by_clicking_col2(page)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\OneDrive\YTEC\MahlePartNumberSearch\mahle_tecalliance_batch_v13.py", line 129, in goto_page3_by_clicking_col2
+    row = find_first_result_row(page)
+  File "D:\OneDrive\YTEC\MahlePartNumberSearch\mahle_tecalliance_batch_v13.py", line 95, in find_first_result_row
+    raise RuntimeError("未找到商品")
+RuntimeError: 未找到商品
+
+[2026-03-16 11:22:45] Start: LR018403
+[2026-03-16 11:23:12] OK: LR018403 -> AC 959 000S | OE=3
+[2026-03-16 11:23:12] Start: LR015555
+[2026-03-16 11:23:40] OK: LR015555 -> AC 760 000S | OE=2
+[2026-03-16 11:23:40] Start: LR034503
+[2026-03-16 11:24:07] OK: LR034503 -> AC 37 000S | OE=7
+[2026-03-16 11:24:07] Start: GX7319710BC
+[2026-03-16 11:24:34] OK: GX7319710BC -> AC 1005 000S | OE=4
+[2026-03-16 11:24:34] Start: LR000566
+[2026-03-16 11:25:02] OK: LR000566 -> AC 441 000S | OE=10
+[2026-03-16 11:25:02] Start: LR070458
+[2026-03-16 11:25:31] OK: LR070458 -> AC 65 000P | OE=2
+[2026-03-16 11:25:31] Start: 97057311100
+[2026-03-16 11:25:58] OK: 97057311100 -> AC 425 000P | OE=2
+[2026-03-16 11:25:59] DONE
+[2026-03-16 13:16:50] OK: LR000566 -> AC 441 000S | OE=10
+[2026-03-16 13:16:50] Start: LR070458
+[2026-03-16 13:17:18] OK: LR070458 -> AC 65 000P | OE=2
+[2026-03-16 13:17:18] Start: 97057311100
+[2026-03-16 13:17:45] OK: 97057311100 -> AC 425 000P | OE=2
+[2026-03-16 13:17:46] DONE
